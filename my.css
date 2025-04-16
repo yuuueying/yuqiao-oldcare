@@ -1,0 +1,399 @@
+/* 我的页面专用样式 */
+
+body {
+    background-color: #f5f5f5;
+    padding-bottom: 70px;
+}
+
+/* 用户资料部分 */
+.profile-section {
+    background-color: white;
+    padding: 20px 15px;
+    margin-bottom: 15px;
+}
+
+.profile-header {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.profile-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #f5f5f5;
+    margin-right: 15px;
+    position: relative;
+}
+
+.profile-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.avatar-edit {
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    width: 24px;
+    height: 24px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.profile-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profile-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 6px;
+}
+
+.profile-address {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.profile-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.stat-item {
+    background-color: #f5f7fe;
+    border-radius: 15px;
+    padding: 4px 10px;
+}
+
+.stat-value {
+    font-size: 0.8rem;
+    color: #4080ff;
+}
+
+.profile-actions {
+    display: flex;
+    gap: 15px;
+}
+
+.action-button {
+    flex: 1;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 0;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.edit-profile {
+    background-color: #f5f5f5;
+    color: #666;
+}
+
+.family-connect {
+    background-color: #e9f0ff;
+    color: #4080ff;
+}
+
+/* 健康信息 */
+.health-info-section {
+    background-color: white;
+    padding: 20px 15px;
+    margin-bottom: 15px;
+}
+
+.section-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.health-cards {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.health-card {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.blood-pressure {
+    background-color: #ffefef;
+}
+
+.heart-rate {
+    background-color: #e6f0ff;
+}
+
+.health-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 8px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.health-data {
+    flex: 1;
+}
+
+.health-value {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.health-label {
+    font-size: 0.9rem;
+    color: #999;
+}
+
+.health-archive-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.health-archive-button img {
+    margin-right: 8px;
+}
+
+.health-archive-button span {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+/* 我的服务 */
+.my-services-section {
+    background-color: white;
+    padding: 20px 15px;
+    margin-bottom: 15px;
+}
+
+.service-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.service-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #f0f0f0;
+    cursor: pointer;
+}
+
+.service-item:last-child {
+    border-bottom: none;
+}
+
+.service-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f5f7fe;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.service-text {
+    flex: 1;
+    font-size: 1rem;
+    color: #333;
+}
+
+.service-badge {
+    min-width: 22px;
+    height: 22px;
+    border-radius: 11px;
+    background-color: #ff5a5f;
+    color: white;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    padding: 0 6px;
+}
+
+.service-arrow {
+    color: #ccc;
+}
+
+/* 系统设置 */
+.system-settings-section {
+    background-color: white;
+    padding: 20px 15px;
+    margin-bottom: 15px;
+}
+
+.settings-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.settings-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #f0f0f0;
+    cursor: pointer;
+}
+
+.settings-item:last-child {
+    border-bottom: none;
+}
+
+.settings-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f5f7fe;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.settings-text {
+    flex: 1;
+    font-size: 1rem;
+    color: #333;
+}
+
+.settings-arrow {
+    color: #ccc;
+}
+
+/* 退出登录 */
+.logout-button {
+    margin: 20px 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+}
+
+.logout-button img {
+    margin-right: 10px;
+}
+
+.logout-button span {
+    color: #ff5a5f;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* 底部导航 */
+.bottom-nav {
+    justify-content: space-between;
+}
+
+.bottom-nav .nav-item {
+    flex: 1;
+}
+
+/* 动画效果 */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.profile-section,
+.health-info-section,
+.my-services-section,
+.system-settings-section,
+.logout-button {
+    animation: fadeIn 0.5s ease;
+}
+
+/* 点击效果 */
+.service-item:active,
+.settings-item:active {
+    background-color: #f9f9f9;
+}
+
+.health-archive-button:active,
+.logout-button:active {
+    background-color: #f0f0f0;
+}
+
+.action-button:active {
+    opacity: 0.8;
+}
+
+/* 响应式调整 */
+@media (max-width: 375px) {
+    .profile-name {
+        font-size: 1.1rem;
+    }
+    
+    .health-value {
+        font-size: 1.2rem;
+    }
+    
+    .service-icon,
+    .settings-icon {
+        width: 36px;
+        height: 36px;
+    }
+}
+
+@media (max-width: 320px) {
+    .profile-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .profile-avatar {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    
+    .profile-stats {
+        justify-content: center;
+    }
+}

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>健康监测</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="health.css">
+</head>
+<body>
+    <!-- 顶部导航 -->
+    <div class="header health-header">
+        <div class="back-button">
+            <a href="index.html">
+                <img src="images/back-icon.png" alt="返回" width="24" height="24">
+            </a>
+        </div>
+        <div class="page-title">健康监测</div>
+        <div class="share-button">
+            <img src="images/share-icon.png" alt="分享" width="24" height="24">
+            <span class="share-text">家人共享</span>
+        </div>
+    </div>
+    
+    <!-- 今日健康状态卡片 -->
+    <div class="health-card-container">
+        <div class="health-status-card">
+            <div class="health-status-header">
+                <div class="health-status-title">今日健康状态</div>
+                <div class="health-status-badge">良好</div>
+            </div>
+            <div class="health-status-date">2025年04月12日 周五 | 最近更新: 10:30</div>
+        </div>
+    </div>
+    
+    <!-- 健康指标网格 -->
+    <div class="health-metrics-grid">
+        <!-- 血压卡片 -->
+        <div class="metric-card">
+            <div class="metric-header">
+                <div class="metric-icon blood-pressure-icon">
+                    <img src="images/blood-pressure-icon.png" alt="血压" width="24" height="24">
+                </div>
+                <div class="metric-title">血压</div>
+            </div>
+            <div class="metric-value">120/80 <span class="metric-unit">mmHg</span></div>
+            <div class="metric-status normal">正常</div>
+        </div>
+        
+        <!-- 心率卡片 -->
+        <div class="metric-card">
+            <div class="metric-header">
+                <div class="metric-icon heart-rate-icon">
+                    <img src="images/heart-rate-icon.png" alt="心率" width="24" height="24">
+                </div>
+                <div class="metric-title">心率</div>
+            </div>
+            <div class="metric-value">75 <span class="metric-unit">次/分钟</span></div>
+            <div class="metric-status normal">正常</div>
+        </div>
+        
+        <!-- 血糖卡片 -->
+        <div class="metric-card">
+            <div class="metric-header">
+                <div class="metric-icon blood-sugar-icon">
+                    <img src="images/blood-sugar-icon.png" alt="血糖" width="24" height="24">
+                </div>
+                <div class="metric-title">血糖</div>
+            </div>
+            <div class="metric-value">5.6 <span class="metric-unit">mmol/L</span></div>
+            <div class="metric-status normal">正常</div>
+        </div>
+        
+        <!-- 睡眠卡片 -->
+        <div class="metric-card">
+            <div class="metric-header">
+                <div class="metric-icon sleep-icon">
+                    <img src="images/sleep-icon.png" alt="睡眠" width="24" height="24">
+                </div>
+                <div class="metric-title">睡眠</div>
+            </div>
+            <div class="metric-value">7.5 <span class="metric-unit">小时</span></div>
+            <div class="metric-status good">良好</div>
+        </div>
+    </div>
+    
+    <!-- 血压趋势图 -->
+    <div class="trend-chart-container">
+        <div class="trend-chart-header">
+            <div class="trend-chart-title">血压趋势</div>
+            <div class="trend-chart-period">
+                最近一周
+                <img src="images/calendar-icon.png" alt="日历" width="20" height="20">
+            </div>
+        </div>
+        <div class="trend-chart" id="bloodPressureChart">
+            <!-- 图表将通过JavaScript动态生成 -->
+        </div>
+        <div class="trend-chart-legend">
+            <div class="legend-item">
+                <div class="legend-color systolic"></div>
+                <div class="legend-label">收缩压</div>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color diastolic"></div>
+                <div class="legend-label">舒张压</div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 健康提醒 -->
+    <div class="health-reminders-container">
+        <div class="health-reminders-header">
+            <div class="health-reminders-title">健康提醒</div>
+            <div class="health-reminders-icon">
+                <img src="images/clock-icon.png" alt="时钟" width="20" height="20">
+            </div>
+        </div>
+        <div class="health-reminders-list">
+            <div class="reminder-item">
+                <div class="reminder-icon medicine-icon">
+                    <img src="images/medicine-icon.png" alt="药物" width="24" height="24">
+                </div>
+                <div class="reminder-content">
+                    <div class="reminder-text">今日服药提醒</div>
+                </div>
+                <div class="reminder-time">12:00</div>
+            </div>
+            <div class="reminder-item">
+                <div class="reminder-icon medicine-icon">
+                    <img src="images/medicine-icon.png" alt="药物" width="24" height="24">
+                </div>
+                <div class="reminder-content">
+                    <div class="reminder-text">今日服药提醒</div>
+                </div>
+                <div class="reminder-time">18:00</div>
+            </div>
+            <div class="reminder-item">
+                <div class="reminder-icon checkup-icon">
+                    <img src="images/checkup-icon.png" alt="体检" width="24" height="24">
+                </div>
+                <div class="reminder-content">
+                    <div class="reminder-text">本周体检预约</div>
+                </div>
+                <div class="reminder-time">周三 9:00</div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 添加健康数据按钮 -->
+    <div class="add-health-data-button">
+        <img src="images/add-icon.png" alt="添加" width="20" height="20">
+        添加健康数据
+    </div>
+    
+    <!-- 底部导航 -->
+    <div class="bottom-nav">
+        <a href="index.html" class="nav-item">
+            <img src="images/home-icon.png" alt="首页" class="nav-icon" width="24" height="24">
+            首页
+        </a>
+        <a href="#" class="nav-item">
+            <div class="emergency-btn">
+                <img src="images/emergency-icon.png" alt="紧急呼叫" class="emergency-nav-icon" width="28" height="28">
+            </div>
+            紧急呼叫
+        </a>
+        <a href="my.html" class="nav-item">
+            <img src="images/my-icon.png" alt="我的" class="nav-icon" width="24" height="24">
+            我的
+        </a>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+    <script src="health.js"></script>
+</body>
+</html>

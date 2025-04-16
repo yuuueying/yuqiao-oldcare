@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="my.css">
+</head>
+<body>
+    <!-- 用户资料部分 -->
+    <div class="profile-section">
+        <div class="profile-header">
+            <div class="profile-avatar">
+                <img src="images/default-avatar.png" alt="用户头像" id="userAvatar">
+                <div class="avatar-edit">
+                    <img src="images/camera-icon.png" alt="编辑" width="16" height="16">
+                </div>
+            </div>
+            <div class="profile-info">
+                <div class="profile-name">王大爷</div>
+                <div class="profile-address">玉桥北里社区</div>
+                <div class="profile-stats">
+                    <div class="stat-item">
+                        <span class="stat-value">互助积分: 53</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">健康状态: 良好</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="profile-actions">
+            <button class="action-button edit-profile">
+                <span>编辑资料</span>
+            </button>
+            <button class="action-button family-connect">
+                <span>家人关联</span>
+            </button>
+        </div>
+    </div>
+    
+    <!-- 健康信息 -->
+    <div class="health-info-section">
+        <div class="section-title">健康信息</div>
+        
+        <div class="health-cards">
+            <div class="health-card blood-pressure">
+                <div class="health-icon">
+                    <img src="images/blood-pressure-icon.png" alt="血压" width="24" height="24">
+                </div>
+                <div class="health-data">
+                    <div class="health-value">120/80</div>
+                    <div class="health-label">血压</div>
+                </div>
+            </div>
+            
+            <div class="health-card heart-rate">
+                <div class="health-icon">
+                    <img src="images/heart-rate-icon.png" alt="心率" width="24" height="24">
+                </div>
+                <div class="health-data">
+                    <div class="health-value">75</div>
+                    <div class="health-label">心率</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="health-archive-button">
+            <img src="images/file-icon.png" alt="文件" width="20" height="20">
+            <span>查看完整健康档案</span>
+        </div>
+    </div>
+    
+    <!-- 我的服务 -->
+    <div class="my-services-section">
+        <div class="section-title">我的服务</div>
+        
+        <div class="service-list">
+            <div class="service-item" data-link="service.html">
+                <div class="service-icon">
+                    <img src="images/calendar-icon.png" alt="预约" width="24" height="24">
+                </div>
+                <div class="service-text">我的预约</div>
+                <div class="service-badge">2</div>
+                <div class="service-arrow">
+                    <img src="images/arrow-right-icon.png" alt="箭头" width="16" height="16">
+                </div>
+            </div>
+            
+            <div class="service-item" data-link="timebank.html">
+                <div class="service-icon">
+                    <img src="images/time-bank-icon.png" alt="时间银行" width="24" height="24">
+                </div>
+                <div class="service-text">时间银行</div>
+                <div class="service-arrow">
+                    <img src="images/arrow-right-icon.png" alt="箭头" width="16" height="16">
+                </div>
+            </div>
+            
+            <div class="service-item">
+                <div class="service-icon">
+                    <img src="images/neighbor-icon.png" alt="邻里互助" width="24" height="24">
+                </div>
+                <div class="service-text">邻里互助</div>
+                <div class="service-arrow">
+                    <img src="images/arrow-right-icon.png" alt="箭头" width="16" height="16">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 系统设置 -->
+    <div class="system-settings-section">
+        <div class="section-title">系统设置</div>
+        
+        <div class="settings-list">
+            <div class="settings-item" data-link="emergency.html">
+                <div class="settings-icon">
+                    <img src="images/emergency-contact-icon.png" alt="紧急联系人" width="24" height="24">
+                </div>
+                <div class="settings-text">紧急联系人</div>
+                <div class="settings-arrow">
+                    <img src="images/arrow-right-icon.png" alt="箭头" width="16" height="16">
+                </div>
+            </div>
+            
+            <div class="settings-item">
+                <div class="settings-icon">
+                    <img src="images/family-icon.png" alt="家庭成员" width="24" height="24">
+                </div>
+                <div class="settings-text">家庭成员管理</div>
+                <div class="settings-arrow">
+                    <img src="images/arrow-right-icon.png" alt="箭头" width="16" height="16">
+                </div>
+            </div>
+            
+            <div class="settings-item">
+                <div class="settings-icon">
+                    <img src="images/notification-icon.png" alt="通知" width="24" height="24">
+                </div>
+                <div class="settings-text">通知设置</div>
+                <div class="settings-arrow">
+                    <img src="images/arrow-right-icon.png" alt="箭头" width="16" height="16">
+                </div>
+            </div>
+            
+            <div class="settings-item">
+                <div class="settings-icon">
+                    <img src="images/accessibility-icon.png" alt="适老化" width="24" height="24">
+                </div>
+                <div class="settings-text">适老化设置</div>
+                <div class="settings-arrow">
+                    <img src="images/arrow-right-icon.png" alt="箭头" width="16" height="16">
+                </div>
+            </div>
+            
+            <div class="settings-item">
+                <div class="settings-icon">
+                    <img src="images/help-icon.png" alt="帮助" width="24" height="24">
+                </div>
+                <div class="settings-text">帮助中心</div>
+                <div class="settings-arrow">
+                    <img src="images/arrow-right-icon.png" alt="箭头" width="16" height="16">
+                </div>
+            </div>
+            
+            <div class="settings-item">
+                <div class="settings-icon">
+                    <img src="images/feedback-icon.png" alt="反馈" width="24" height="24">
+                </div>
+                <div class="settings-text">意见反馈</div>
+                <div class="settings-arrow">
+                    <img src="images/arrow-right-icon.png" alt="箭头" width="16" height="16">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 退出登录 -->
+    <div class="logout-button">
+        <img src="images/logout-icon.png" alt="退出" width="20" height="20">
+        <span>退出登录</span>
+    </div>
+    
+    <!-- 底部导航 -->
+    <div class="bottom-nav">
+        <a href="index.html" class="nav-item">
+            <img src="images/home-icon.png" alt="首页" class="nav-icon" width="24" height="24">
+            首页
+        </a>
+        <a href="#" class="nav-item">
+            <div class="emergency-btn">
+                <img src="images/emergency-icon.png" alt="紧急呼叫" class="emergency-nav-icon" width="28" height="28">
+            </div>
+            紧急呼叫
+        </a>
+        <a href="#" class="nav-item active">
+            <img src="images/my-icon.png" alt="我的" class="nav-icon" width="24" height="24">
+            我的
+        </a>
+    </div>
+
+    <script src="my.js"></script>
+</body>
+</html>

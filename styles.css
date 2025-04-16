@@ -1,0 +1,439 @@
+/* 全局样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "PingFang SC", "Helvetica Neue", Arial, sans-serif;
+    transition: all 0.3s ease;
+}
+
+:root {
+    --primary-color: #ff7d1a;
+    --danger-color: #f45a52;
+    --success-color: #30c67d;
+    --text-color: #333;
+    --light-text: #999;
+    --border-color: #f0f0f0;
+    --health-bg: #e8f0ff;
+    --health-color: #4080ff;
+    --service-bg: #e8f8ef;
+    --service-color: #30c67d;
+    --time-bg: #fff8e0;
+    --time-color: #d4a431;
+    --family-bg: #f7ebff;
+    --family-color: #af5cf7;
+    --base-font-size: 14px;
+    --medium-font-size: 16px;
+    --large-font-size: 18px;
+}
+
+html {
+    font-size: var(--base-font-size);
+}
+
+html.font-medium {
+    font-size: var(--medium-font-size);
+}
+
+html.font-large {
+    font-size: var(--large-font-size);
+}
+
+body {
+    background-color: #f8f8f8;
+    max-width: 430px;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+/* 顶部导航 */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.logo-icon {
+    color: var(--primary-color);
+    margin-right: 8px;
+}
+
+.header-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.header-icon {
+    font-size: 1.4rem;
+    color: var(--light-text);
+}
+
+/* 适老化模式 */
+.accessibility {
+    background-color: #fff9f2;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.accessibility-text {
+    color: var(--primary-color);
+    font-size: 1rem;
+}
+
+.font-size-controls {
+    display: flex;
+    gap: 10px;
+}
+
+.font-size-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.font-size-btn.active {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.voice-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+}
+
+/* 紧急呼叫 */
+.emergency-call {
+    background-color: var(--danger-color);
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 15px 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(244, 90, 82, 0.3);
+    transform: translateY(0);
+}
+
+.emergency-call:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 5px rgba(244, 90, 82, 0.3);
+}
+
+.emergency-icon {
+    margin-right: 10px;
+}
+
+/* 功能区 */
+.features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    padding: 15px;
+}
+
+.feature-card {
+    border-radius: 8px;
+    padding: 25px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 170px;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    transform: translateY(0);
+}
+
+.feature-card:active {
+    transform: translateY(2px);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+}
+
+.feature-icon {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.feature-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.feature-desc {
+    font-size: 0.9rem;
+    color: var(--light-text);
+    text-align: center;
+}
+
+.health-card {
+    background-color: var(--health-bg);
+}
+
+.health-icon {
+    color: var(--health-color);
+}
+
+.service-card {
+    background-color: var(--service-bg);
+}
+
+.service-icon {
+    color: var(--service-color);
+}
+
+.time-card {
+    background-color: var(--time-bg);
+}
+
+.time-icon {
+    color: var(--time-color);
+}
+
+.family-card {
+    background-color: var(--family-bg);
+}
+
+.family-icon {
+    color: var(--family-color);
+}
+
+/* 附近养老服务 */
+.nearby-services {
+    padding: 15px 15px 0;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.section-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.view-all {
+    color: var(--light-text);
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.service-list {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.service-item {
+    display: flex;
+    padding: 15px;
+    border-bottom: 1px solid var(--border-color);
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.service-item:last-child {
+    border-bottom: none;
+}
+
+.service-item:hover {
+    background-color: #f9f9f9;
+}
+
+.service-item-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #fdf2e7;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    margin-right: 15px;
+}
+
+.service-item-info {
+    flex: 1;
+}
+
+.service-item-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+
+.service-item-distance {
+    color: var(--light-text);
+    font-size: 0.9rem;
+    margin-right: 15px;
+}
+
+.service-item-status {
+    color: var(--success-color);
+    font-size: 0.9rem;
+}
+
+/* 底部导航 */
+.bottom-spacer {
+    height: 70px;
+}
+
+.bottom-nav {
+    margin-top: auto;
+    display: flex;
+    background-color: #fff;
+    padding: 10px 0;
+    border-top: 1px solid var(--border-color);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 430px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+    z-index: 100;
+}
+
+.nav-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    color: var(--light-text);
+    padding: 5px 0;
+    text-decoration: none;
+    position: relative;
+}
+
+.nav-item::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) scaleX(0);
+    width: 20px;
+    height: 3px;
+    background-color: var(--primary-color);
+    transition: transform 0.3s ease;
+}
+
+.nav-item.active {
+    color: var(--primary-color);
+}
+
+.nav-item.active::after {
+    transform: translateX(-50%) scaleX(1);
+}
+
+.nav-icon {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.emergency-btn {
+    width: 60px;
+    height: 60px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -20px;
+    box-shadow: 0 2px 10px rgba(255, 125, 26, 0.3);
+}
+
+.emergency-nav-icon {
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+/* 动画效果 */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.emergency-call {
+    animation: pulse 2s infinite;
+}
+
+/* 页面切换动画 */
+.page-transition {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.page-transition.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* 响应式设计 */
+@media (max-width: 375px) {
+    .features {
+        gap: 10px;
+    }
+    
+    .feature-card {
+        padding: 20px 15px;
+        min-height: 150px;
+    }
+}
+
+@media (max-width: 320px) {
+    .feature-title {
+        font-size: 1rem;
+    }
+    
+    .feature-desc {
+        font-size: 0.8rem;
+    }
+}

@@ -1,0 +1,523 @@
+/* 家庭关怀页面专用样式 */
+
+/* 顶部导航 */
+.family-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.back-button {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.page-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.header-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.header-icon {
+    cursor: pointer;
+}
+
+/* 家人状态卡片 */
+.family-status-container {
+    padding: 15px;
+}
+
+.family-status-card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    margin-bottom: 15px;
+}
+
+.family-status-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.family-status-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.family-members-count {
+    font-size: 0.9rem;
+    color: var(--family-color);
+}
+
+.family-members {
+    margin-bottom: 15px;
+}
+
+.family-member {
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.family-member:last-child {
+    border-bottom: none;
+}
+
+.family-member.active {
+    background-color: #fcf7ff;
+    border-radius: 8px;
+    padding: 12px 8px;
+}
+
+.member-avatar {
+    position: relative;
+    margin-right: 12px;
+}
+
+.member-avatar img {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.status-indicator {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.status-indicator.online {
+    background-color: var(--success-color);
+}
+
+.status-indicator.offline {
+    background-color: #ccc;
+}
+
+.member-info {
+    flex: 1;
+}
+
+.member-name {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 4px;
+    color: var(--text-color);
+}
+
+.member-status {
+    font-size: 0.8rem;
+    color: var(--light-text);
+}
+
+.member-action {
+    display: flex;
+    align-items: center;
+}
+
+.call-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #e8f0ff;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.add-family-member {
+    width: 100%;
+    padding: 12px 0;
+    border-radius: 8px;
+    border: 1px dashed var(--family-color);
+    background-color: transparent;
+    color: var(--family-color);
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.add-family-member img {
+    margin-right: 8px;
+}
+
+/* 健康共享功能 */
+.health-sharing-section {
+    padding: 0 15px 15px;
+    background-color: #fff;
+    border-radius: 12px;
+    margin: 0 15px 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.section-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.section-toggle {
+    display: flex;
+    align-items: center;
+}
+
+/* 开关样式 */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: var(--family-color);
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px var(--family-color);
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.switch.small {
+    width: 40px;
+    height: 20px;
+}
+
+.switch.small .slider:before {
+    height: 16px;
+    width: 16px;
+}
+
+.switch.small input:checked + .slider:before {
+    transform: translateX(20px);
+}
+
+.health-sharing-content {
+    padding: 15px 0;
+}
+
+.health-sharing-description {
+    font-size: 0.9rem;
+    color: var(--light-text);
+    margin-bottom: 15px;
+}
+
+.shared-data-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.shared-data-item {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.data-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.blood-pressure-bg {
+    background-color: #ffefef;
+}
+
+.heart-rate-bg {
+    background-color: #fff0f5;
+}
+
+.activity-bg {
+    background-color: #e6f7ff;
+}
+
+.medication-bg {
+    background-color: #f0f2ff;
+}
+
+.data-name {
+    flex: 1;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+/* 家庭通知记录 */
+.family-notifications-section {
+    padding: 0 15px 15px;
+    background-color: #fff;
+    border-radius: 12px;
+    margin: 0 15px 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.view-all {
+    font-size: 0.9rem;
+    color: var(--family-color);
+    cursor: pointer;
+}
+
+.notification-list {
+    padding: 5px 0;
+}
+
+.notification-item {
+    display: flex;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.notification-item:last-child {
+    border-bottom: none;
+}
+
+.notification-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+}
+
+.health-alert {
+    background-color: #ffefef;
+}
+
+.activity-alert {
+    background-color: #e6f7ff;
+}
+
+.medication-reminder {
+    background-color: #fff8e0;
+}
+
+.notification-content {
+    flex: 1;
+}
+
+.notification-title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 4px;
+    color: var(--text-color);
+}
+
+.notification-desc {
+    font-size: 0.9rem;
+    color: var(--light-text);
+    margin-bottom: 4px;
+}
+
+.notification-time {
+    font-size: 0.8rem;
+    color: var(--light-text);
+}
+
+/* 紧急联系人设置 */
+.emergency-contacts-section {
+    padding: 0 15px 15px;
+    background-color: #fff;
+    border-radius: 12px;
+    margin: 0 15px 80px; /* 为底部导航留出空间 */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.edit-btn {
+    font-size: 0.9rem;
+    color: var(--family-color);
+    cursor: pointer;
+}
+
+.emergency-contacts-list {
+    padding: 10px 0;
+}
+
+.emergency-contact {
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.emergency-contact:last-child {
+    border-bottom: none;
+}
+
+.contact-avatar {
+    margin-right: 12px;
+}
+
+.contact-avatar img {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.contact-name {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 4px;
+    color: var(--text-color);
+}
+
+.contact-phone {
+    font-size: 0.9rem;
+    color: var(--light-text);
+}
+
+.contact-priority {
+    padding: 4px 10px;
+    border-radius: 100px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.contact-priority.primary {
+    background-color: #ffefef;
+    color: var(--danger-color);
+}
+
+.contact-priority.secondary {
+    background-color: #e6f7ff;
+    color: var(--health-color);
+}
+
+.emergency-settings {
+    padding: 10px 0;
+}
+
+.setting-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.setting-label {
+    font-size: 0.95rem;
+    color: var(--text-color);
+}
+
+/* 动画效果 */
+.family-status-card,
+.health-sharing-section,
+.family-notifications-section,
+.emergency-contacts-section {
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 页面适配不同设备 */
+@media (max-width: 375px) {
+    .shared-data-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 320px) {
+    .family-member {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .member-avatar {
+        margin-bottom: 8px;
+    }
+    
+    .member-action {
+        margin-top: 8px;
+    }
+}

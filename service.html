@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>服务预约</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="service.css">
+</head>
+<body>
+    <!-- 顶部导航 -->
+    <div class="header service-header">
+        <div class="back-button">
+            <a href="index.html">
+                <img src="images/back-icon.png" alt="返回" width="24" height="24">
+            </a>
+        </div>
+        <div class="page-title">服务预约</div>
+        <div class="header-icons">
+            <img src="images/file-icon.png" alt="文件" class="header-icon" width="24" height="24">
+            <img src="images/notification-icon.png" alt="通知" class="header-icon" width="24" height="24">
+        </div>
+    </div>
+    
+    <!-- 搜索框 -->
+    <div class="search-container">
+        <div class="search-box">
+            <img src="images/search-icon.png" alt="搜索" width="20" height="20">
+            <input type="text" placeholder="搜索养老服务">
+        </div>
+    </div>
+    
+    <!-- 服务分类标签 -->
+    <div class="service-tabs">
+        <div class="tab active">全部服务</div>
+        <div class="tab">附近服务</div>
+        <div class="tab">热门服务</div>
+    </div>
+    
+    <!-- 服务卡片网格 -->
+    <div class="service-grid">
+        <!-- 助餐服务 -->
+        <div class="service-card">
+            <div class="service-icon food-icon">
+                <img src="images/food-icon.png" alt="助餐" width="32" height="32">
+            </div>
+            <div class="service-name">助餐服务</div>
+            <div class="service-desc">营养餐配送</div>
+            <button class="booking-btn food-btn">预约</button>
+        </div>
+        
+        <!-- 助医服务 -->
+        <div class="service-card">
+            <div class="service-icon medical-icon">
+                <img src="images/medical-icon.png" alt="助医" width="32" height="32">
+            </div>
+            <div class="service-name">助医服务</div>
+            <div class="service-desc">挂号、陪诊</div>
+            <button class="booking-btn medical-btn">预约</button>
+        </div>
+        
+        <!-- 助洁服务 -->
+        <div class="service-card">
+            <div class="service-icon cleaning-icon">
+                <img src="images/cleaning-icon.png" alt="助洁" width="32" height="32">
+            </div>
+            <div class="service-name">助洁服务</div>
+            <div class="service-desc">家居清洁</div>
+            <button class="booking-btn cleaning-btn">预约</button>
+        </div>
+        
+        <!-- 助行服务 -->
+        <div class="service-card">
+            <div class="service-icon travel-icon">
+                <img src="images/travel-icon.png" alt="助行" width="32" height="32">
+            </div>
+            <div class="service-name">助行服务</div>
+            <div class="service-desc">出行陪伴</div>
+            <button class="booking-btn travel-btn">预约</button>
+        </div>
+        
+        <!-- 康复服务 -->
+        <div class="service-card">
+            <div class="service-icon rehab-icon">
+                <img src="images/rehab-icon.png" alt="康复" width="32" height="32">
+            </div>
+            <div class="service-name">康复服务</div>
+            <div class="service-desc">上门理疗</div>
+            <button class="booking-btn rehab-btn">预约</button>
+        </div>
+        
+        <!-- 微站服务 -->
+        <div class="service-card">
+            <div class="service-icon station-icon">
+                <img src="images/station-icon.png" alt="微站" width="32" height="32">
+            </div>
+            <div class="service-name">微站服务</div>
+            <div class="service-desc">养老服务站</div>
+            <button class="view-btn station-btn">查看</button>
+        </div>
+    </div>
+    
+    <!-- 推荐服务 -->
+    <div class="recommended-services">
+        <div class="section-header">
+            <div class="section-title">推荐服务</div>
+            <div class="view-more">更多</div>
+        </div>
+        
+        <div class="service-list">
+            <!-- 老年营养餐 -->
+            <div class="service-item">
+                <div class="service-item-icon">
+                    <img src="images/food-icon.png" alt="营养餐" width="32" height="32">
+                </div>
+                <div class="service-item-info">
+                    <div class="service-item-name">老年营养餐</div>
+                    <div class="service-item-rating">
+                        <div class="stars">
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                        </div>
+                        <span class="rating">4.9 (124条评价)</span>
+                    </div>
+                    <div class="service-item-info-row">
+                        <div class="delivery-time">
+                            <img src="images/time-icon.png" alt="时间" width="16" height="16">
+                            <span>每日配送</span>
+                        </div>
+                        <div class="distance">
+                            <img src="images/location-icon.png" alt="位置" width="16" height="16">
+                            <span>500米</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-item-arrow">
+                    <img src="images/arrow-right-icon.png" alt="箭头" width="16" height="16">
+                </div>
+            </div>
+            
+            <!-- 社区医疗巡诊 -->
+            <div class="service-item">
+                <div class="service-item-icon medical-bg">
+                    <img src="images/medical-icon.png" alt="医疗" width="32" height="32">
+                </div>
+                <div class="service-item-info">
+                    <div class="service-item-name">社区医疗巡诊</div>
+                    <div class="service-item-rating">
+                        <div class="stars">
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star half">★</span>
+                        </div>
+                        <span class="rating">4.8 (86条评价)</span>
+                    </div>
+                    <div class="service-item-info-row">
+                        <div class="delivery-time">
+                            <img src="images/calendar-icon.png" alt="日历" width="16" height="16">
+                            <span>每周三、五</span>
+                        </div>
+                        <div class="distance">
+                            <img src="images/location-icon.png" alt="位置" width="16" height="16">
+                            <span>社区服务中心</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-item-arrow">
+                    <img src="images/arrow-right-icon.png" alt="箭头" width="16" height="16">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 最近预约 -->
+    <div class="recent-bookings">
+        <div class="section-header">
+            <div class="section-title">最近预约</div>
+            <div class="view-all">查看全部</div>
+        </div>
+        
+        <div class="booking-list">
+            <!-- 老年营养餐预约 -->
+            <div class="booking-item">
+                <div class="booking-icon food-bg">
+                    <img src="images/food-icon.png" alt="营养餐" width="32" height="32">
+                </div>
+                <div class="booking-info">
+                    <div class="booking-name">老年营养餐</div>
+                    <div class="booking-time">今日 12:00 送达</div>
+                </div>
+                <div class="booking-status delivering">配送中</div>
+            </div>
+            
+            <!-- 家居清洁预约 -->
+            <div class="booking-item">
+                <div class="booking-icon cleaning-bg">
+                    <img src="images/cleaning-icon.png" alt="清洁" width="32" height="32">
+                </div>
+                <div class="booking-info">
+                    <div class="booking-name">家居清洁</div>
+                    <div class="booking-time">04-15 上午 9:00</div>
+                </div>
+                <div class="booking-status booked">已预约</div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 底部导航 -->
+    <div class="bottom-nav">
+        <a href="index.html" class="nav-item">
+            <img src="images/home-icon.png" alt="首页" class="nav-icon" width="24" height="24">
+            首页
+        </a>
+        <a href="#" class="nav-item">
+            <div class="emergency-btn">
+                <img src="images/emergency-icon.png" alt="紧急呼叫" class="emergency-nav-icon" width="28" height="28">
+            </div>
+            紧急呼叫
+        </a>
+        <a href="my.html" class="nav-item">
+            <img src="images/my-icon.png" alt="我的" class="nav-icon" width="24" height="24">
+            我的
+        </a>
+    </div>
+
+    <script src="service.js"></script>
+</body>
+</html>

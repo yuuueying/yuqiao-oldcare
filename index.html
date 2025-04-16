@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>玉桥街道养老服务</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- 
+    需要准备的图标文件:
+    /images/logo-icon.png - 应用logo图标
+    /images/notification-icon.png - 通知图标
+    /images/settings-icon.png - 设置图标
+    /images/emergency-icon.png - 紧急呼叫图标
+    /images/health-icon.png - 健康监测图标
+    /images/service-icon.png - 服务预约图标
+    /images/time-icon.png - 时间银行图标
+    /images/family-icon.png - 家庭关怀图标
+    /images/home-icon.png - 首页导航图标
+    /images/my-icon.png - 我的导航图标
+    /images/elderly-station-icon.png - 养老站图标
+    /images/health-center-icon.png - 健康中心图标
+    -->
+</head>
+<body>
+    <!-- 顶部导航 -->
+    <div class="header">
+        <div class="logo">
+            <img src="images/logo-icon.png" alt="logo" class="logo-icon" width="24" height="24">
+            玉桥街道
+        </div>
+        <div class="header-icons">
+            <img src="images/notification-icon.png" alt="通知" class="header-icon" width="22" height="22">
+            <img src="images/settings-icon.png" alt="设置" class="header-icon" width="22" height="22">
+        </div>
+    </div>
+    
+    <!-- 适老化模式 -->
+    <div class="accessibility">
+        <div class="accessibility-text">关怀模式</div>
+        <div class="font-size-controls">
+            <button class="font-size-btn active" data-size="normal">A</button>
+            <button class="font-size-btn" data-size="medium">A+</button>
+            <button class="font-size-btn" data-size="large">A++</button>
+            <button class="voice-btn" id="voiceBtn">
+                <img src="images/voice-icon.png" alt="语音" width="20" height="20">
+            </button>
+        </div>
+    </div>
+    
+    <!-- 紧急呼叫 -->
+    <div class="emergency-call">
+        <img src="images/emergency-icon.png" alt="紧急呼叫" class="emergency-icon" width="24" height="24">
+        紧急呼叫
+    </div>
+    
+    <!-- 功能区 -->
+    <div class="features">
+        <div class="feature-card health-card">
+            <img src="images/health-icon.png" alt="健康监测" class="feature-icon health-icon" width="28" height="28">
+            <div class="feature-title">健康监测</div>
+            <div class="feature-desc">今日状态良好</div>
+        </div>
+        <div class="feature-card service-card">
+            <img src="images/service-icon.png" alt="服务预约" class="feature-icon service-icon" width="28" height="28">
+            <div class="feature-title">服务预约</div>
+            <div class="feature-desc">点击预约养老服务</div>
+        </div>
+        <div class="feature-card time-card">
+            <img src="images/time-icon.png" alt="时间银行" class="feature-icon time-icon" width="28" height="28">
+            <div class="feature-title">时间银行</div>
+            <div class="feature-desc">53小时可用</div>
+        </div>
+        <div class="feature-card family-card">
+            <img src="images/family-icon.png" alt="家庭关怀" class="feature-icon family-icon" width="28" height="28">
+            <div class="feature-title">家庭关怀</div>
+            <div class="feature-desc">家人已连接</div>
+        </div>
+    </div>
+    
+    <!-- 附近养老服务 -->
+    <div class="nearby-services">
+        <div class="section-header">
+            <div class="section-title">附近养老服务</div>
+            <div class="view-all">查看全部</div>
+        </div>
+        <div class="service-list">
+            <div class="service-item">
+                <div class="service-item-icon">
+                    <img src="images/elderly-station-icon.png" alt="养老站" width="30" height="30">
+                </div>
+                <div class="service-item-info">
+                    <div class="service-item-name">玉桥北里微型养老站</div>
+                    <div>
+                        <span class="service-item-distance">距离 350米</span>
+                        <span class="service-item-status">营业中</span>
+                    </div>
+                </div>
+            </div>
+            <div class="service-item">
+                <div class="service-item-icon">
+                    <img src="images/health-center-icon.png" alt="健康中心" width="30" height="30">
+                </div>
+                <div class="service-item-info">
+                    <div class="service-item-name">社区健康检测中心</div>
+                    <div>
+                        <span class="service-item-distance">距离 500米</span>
+                        <span class="service-item-status">营业中</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 底部导航占位 -->
+    <div class="bottom-spacer"></div>
+    
+    <!-- 底部导航 -->
+    <div class="bottom-nav">
+        <a href="#" class="nav-item active" data-page="home">
+            <img src="images/home-icon.png" alt="首页" class="nav-icon" width="24" height="24">
+            首页
+        </a>
+        <a href="#" class="nav-item" data-page="emergency">
+            <div class="emergency-btn">
+                <img src="images/emergency-icon.png" alt="紧急呼叫" class="emergency-nav-icon" width="28" height="28">
+            </div>
+            紧急呼叫
+        </a>
+        <a href="#" class="nav-item" data-page="my">
+            <img src="images/my-icon.png" alt="我的" class="nav-icon" width="24" height="24">
+            我的
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

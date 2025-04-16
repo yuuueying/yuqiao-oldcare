@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>家庭关怀</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="family.css">
+</head>
+<body>
+    <!-- 顶部导航 -->
+    <div class="header family-header">
+        <div class="back-button">
+            <a href="index.html">
+                <img src="images/back-icon.png" alt="返回" width="24" height="24">
+            </a>
+        </div>
+        <div class="page-title">家庭关怀</div>
+        <div class="header-icons">
+            <img src="images/message-icon.png" alt="消息" class="header-icon" width="24" height="24">
+            <img src="images/settings-icon.png" alt="设置" class="header-icon" width="24" height="24">
+        </div>
+    </div>
+    
+    <!-- 家人状态卡片 -->
+    <div class="family-status-container">
+        <div class="family-status-card">
+            <div class="family-status-header">
+                <div class="family-status-title">家人状态</div>
+                <div class="family-members-count">3位家人已连接</div>
+            </div>
+            <div class="family-members">
+                <div class="family-member active">
+                    <div class="member-avatar">
+                        <img src="images/wife-avatar.png" alt="老伴" width="40" height="40">
+                        <div class="status-indicator online"></div>
+                    </div>
+                    <div class="member-info">
+                        <div class="member-name">李奶奶（老伴）</div>
+                        <div class="member-status">在线</div>
+                    </div>
+                    <div class="member-action">
+                        <button class="call-btn">
+                            <img src="images/call-icon.png" alt="呼叫" width="20" height="20">
+                        </button>
+                    </div>
+                </div>
+                <div class="family-member">
+                    <div class="member-avatar">
+                        <img src="images/son-avatar.png" alt="儿子" width="40" height="40">
+                        <div class="status-indicator offline"></div>
+                    </div>
+                    <div class="member-info">
+                        <div class="member-name">王小明（儿子）</div>
+                        <div class="member-status">最近活跃: 今天 15:30</div>
+                    </div>
+                    <div class="member-action">
+                        <button class="call-btn">
+                            <img src="images/call-icon.png" alt="呼叫" width="20" height="20">
+                        </button>
+                    </div>
+                </div>
+                <div class="family-member">
+                    <div class="member-avatar">
+                        <img src="images/daughter-avatar.png" alt="女儿" width="40" height="40">
+                        <div class="status-indicator offline"></div>
+                    </div>
+                    <div class="member-info">
+                        <div class="member-name">王丽（女儿）</div>
+                        <div class="member-status">最近活跃: 昨天 19:20</div>
+                    </div>
+                    <div class="member-action">
+                        <button class="call-btn">
+                            <img src="images/call-icon.png" alt="呼叫" width="20" height="20">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <button class="add-family-member">
+                <img src="images/add-icon.png" alt="添加" width="20" height="20">
+                添加家人
+            </button>
+        </div>
+    </div>
+    
+    <!-- 健康共享功能 -->
+    <div class="health-sharing-section">
+        <div class="section-header">
+            <div class="section-title">健康数据共享</div>
+            <div class="section-toggle">
+                <label class="switch">
+                    <input type="checkbox" id="healthSharingToggle" checked>
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+        <div class="health-sharing-content">
+            <div class="health-sharing-description">
+                已开启健康数据共享，您的家人可以实时查看您的健康状态。
+            </div>
+            <div class="shared-data-list">
+                <div class="shared-data-item">
+                    <div class="data-icon blood-pressure-bg">
+                        <img src="images/blood-pressure-icon.png" alt="血压" width="24" height="24">
+                    </div>
+                    <div class="data-name">血压</div>
+                    <div class="data-toggle">
+                        <label class="switch small">
+                            <input type="checkbox" checked>
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="shared-data-item">
+                    <div class="data-icon heart-rate-bg">
+                        <img src="images/heart-rate-icon.png" alt="心率" width="24" height="24">
+                    </div>
+                    <div class="data-name">心率</div>
+                    <div class="data-toggle">
+                        <label class="switch small">
+                            <input type="checkbox" checked>
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="shared-data-item">
+                    <div class="data-icon activity-bg">
+                        <img src="images/activity-icon.png" alt="活动" width="24" height="24">
+                    </div>
+                    <div class="data-name">日常活动</div>
+                    <div class="data-toggle">
+                        <label class="switch small">
+                            <input type="checkbox" checked>
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="shared-data-item">
+                    <div class="data-icon medication-bg">
+                        <img src="images/medication-icon.png" alt="用药" width="24" height="24">
+                    </div>
+                    <div class="data-name">用药提醒</div>
+                    <div class="data-toggle">
+                        <label class="switch small">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 家庭通知记录 -->
+    <div class="family-notifications-section">
+        <div class="section-header">
+            <div class="section-title">家庭通知记录</div>
+            <div class="view-all">查看全部</div>
+        </div>
+        <div class="notification-list">
+            <div class="notification-item">
+                <div class="notification-icon health-alert">
+                    <img src="images/health-alert-icon.png" alt="健康提醒" width="24" height="24">
+                </div>
+                <div class="notification-content">
+                    <div class="notification-title">血压偏高提醒</div>
+                    <div class="notification-desc">您的血压偏高，已通知您的家人王小明</div>
+                    <div class="notification-time">今天 10:30</div>
+                </div>
+            </div>
+            <div class="notification-item">
+                <div class="notification-icon activity-alert">
+                    <img src="images/activity-alert-icon.png" alt="活动提醒" width="24" height="24">
+                </div>
+                <div class="notification-content">
+                    <div class="notification-title">低活动提醒</div>
+                    <div class="notification-desc">您今天活动量较少，已通知您的家人</div>
+                    <div class="notification-time">昨天 15:45</div>
+                </div>
+            </div>
+            <div class="notification-item">
+                <div class="notification-icon medication-reminder">
+                    <img src="images/medication-reminder-icon.png" alt="用药提醒" width="24" height="24">
+                </div>
+                <div class="notification-content">
+                    <div class="notification-title">用药提醒</div>
+                    <div class="notification-desc">您的家人李奶奶查看了您的用药提醒</div>
+                    <div class="notification-time">昨天 08:20</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 紧急联系人设置 -->
+    <div class="emergency-contacts-section">
+        <div class="section-header">
+            <div class="section-title">紧急联系人设置</div>
+            <div class="edit-btn">编辑</div>
+        </div>
+        <div class="emergency-contacts-list">
+            <div class="emergency-contact">
+                <div class="contact-avatar">
+                    <img src="images/son-avatar.png" alt="儿子" width="40" height="40">
+                </div>
+                <div class="contact-info">
+                    <div class="contact-name">王小明（儿子）</div>
+                    <div class="contact-phone">138****1234</div>
+                </div>
+                <div class="contact-priority primary">主要</div>
+            </div>
+            <div class="emergency-contact">
+                <div class="contact-avatar">
+                    <img src="images/daughter-avatar.png" alt="女儿" width="40" height="40">
+                </div>
+                <div class="contact-info">
+                    <div class="contact-name">王丽（女儿）</div>
+                    <div class="contact-phone">139****5678</div>
+                </div>
+                <div class="contact-priority secondary">次要</div>
+            </div>
+        </div>
+        <div class="emergency-settings">
+            <div class="setting-item">
+                <div class="setting-label">自动拨打紧急联系人</div>
+                <div class="setting-toggle">
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="setting-item">
+                <div class="setting-label">自动发送位置信息</div>
+                <div class="setting-toggle">
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 底部导航 -->
+    <div class="bottom-nav">
+        <a href="index.html" class="nav-item">
+            <img src="images/home-icon.png" alt="首页" class="nav-icon" width="24" height="24">
+            首页
+        </a>
+        <a href="#" class="nav-item">
+            <div class="emergency-btn">
+                <img src="images/emergency-icon.png" alt="紧急呼叫" class="emergency-nav-icon" width="28" height="28">
+            </div>
+            紧急呼叫
+        </a>
+        <a href="my.html" class="nav-item">
+            <img src="images/my-icon.png" alt="我的" class="nav-icon" width="24" height="24">
+            我的
+        </a>
+    </div>
+
+    <script src="family.js"></script>
+</body>
+</html>

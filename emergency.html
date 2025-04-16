@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>紧急救援</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="emergency.css">
+</head>
+<body>
+    <!-- 顶部导航 -->
+    <div class="header emergency-header">
+        <div class="back-button">
+            <a href="index.html">
+                <img src="images/back-icon.png" alt="返回" width="24" height="24">
+            </a>
+        </div>
+        <div class="page-title">紧急救援</div>
+        <div class="header-icons">
+            <img src="images/help-icon.png" alt="帮助" class="header-icon" width="24" height="24">
+        </div>
+    </div>
+    
+    <!-- 一键紧急求助 -->
+    <div class="emergency-section">
+        <div class="section-title">一键紧急求助</div>
+        <div class="instruction-text">遇到紧急情况，长按下方按钮5秒钟</div>
+        
+        <div class="sos-button-container">
+            <button class="sos-button" id="sosButton">
+                <img src="images/phone-icon.png" alt="电话" class="phone-icon" width="40" height="40">
+                <span class="sos-text">SOS</span>
+            </button>
+        </div>
+    </div>
+    
+    <!-- 紧急联系人 -->
+    <div class="contacts-section">
+        <div class="section-title">紧急联系人</div>
+        
+        <div class="contact-list">
+            <!-- 李医生 -->
+            <div class="contact-item">
+                <div class="contact-avatar medical">
+                    <img src="images/doctor-icon.png" alt="医生" width="24" height="24">
+                </div>
+                <div class="contact-info">
+                    <div class="contact-name">李医生</div>
+                    <div class="contact-role">社区医生</div>
+                </div>
+                <button class="call-button">
+                    <img src="images/call-icon.png" alt="呼叫" width="24" height="24">
+                </button>
+            </div>
+            
+            <!-- 张护士 -->
+            <div class="contact-item">
+                <div class="contact-avatar nurse">
+                    <img src="images/nurse-icon.png" alt="护士" width="24" height="24">
+                </div>
+                <div class="contact-info">
+                    <div class="contact-name">张护士</div>
+                    <div class="contact-role">社区护士</div>
+                </div>
+                <button class="call-button">
+                    <img src="images/call-icon.png" alt="呼叫" width="24" height="24">
+                </button>
+            </div>
+            
+            <!-- 王小明 -->
+            <div class="contact-item">
+                <div class="contact-avatar family">
+                    <img src="images/family-icon.png" alt="家人" width="24" height="24">
+                </div>
+                <div class="contact-info">
+                    <div class="contact-name">王小明</div>
+                    <div class="contact-role">儿子</div>
+                </div>
+                <button class="call-button">
+                    <img src="images/call-icon.png" alt="呼叫" width="24" height="24">
+                </button>
+            </div>
+            
+            <!-- 管理紧急联系人按钮 -->
+            <div class="manage-contacts-button">
+                管理紧急联系人
+            </div>
+        </div>
+    </div>
+    
+    <!-- 紧急救援服务 -->
+    <div class="services-section">
+        <div class="section-title">紧急救援服务</div>
+        
+        <div class="service-grid">
+            <!-- 120急救中心 -->
+            <div class="service-item ambulance">
+                <div class="service-icon">
+                    <img src="images/ambulance-icon.png" alt="急救" width="32" height="32">
+                </div>
+                <div class="service-info">
+                    <div class="service-name">120</div>
+                    <div class="service-desc">急救中心</div>
+                </div>
+            </div>
+            
+            <!-- 110报警中心 -->
+            <div class="service-item police">
+                <div class="service-icon">
+                    <img src="images/police-icon.png" alt="报警" width="32" height="32">
+                </div>
+                <div class="service-info">
+                    <div class="service-name">110</div>
+                    <div class="service-desc">报警中心</div>
+                </div>
+            </div>
+            
+            <!-- 119消防中心 -->
+            <div class="service-item fire">
+                <div class="service-icon">
+                    <img src="images/fire-icon.png" alt="消防" width="32" height="32">
+                </div>
+                <div class="service-info">
+                    <div class="service-name">119</div>
+                    <div class="service-desc">消防中心</div>
+                </div>
+            </div>
+            
+            <!-- 养老服务 -->
+            <div class="service-item elderly">
+                <div class="service-icon">
+                    <img src="images/elderly-care-icon.png" alt="养老" width="32" height="32">
+                </div>
+                <div class="service-info">
+                    <div class="service-name">养老服务</div>
+                    <div class="service-desc">社区驿站</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 底部导航 -->
+    <div class="bottom-nav">
+        <a href="index.html" class="nav-item">
+            <img src="images/home-icon.png" alt="首页" class="nav-icon" width="24" height="24">
+            首页
+        </a>
+        <a href="#" class="nav-item">
+            <img src="images/neighbor-icon.png" alt="邻里互助" class="nav-icon" width="24" height="24">
+            邻里互助
+        </a>
+        <a href="#" class="nav-item active">
+            <div class="emergency-btn">
+                <img src="images/emergency-icon.png" alt="紧急呼叫" class="emergency-nav-icon" width="28" height="28">
+            </div>
+            紧急呼叫
+        </a>
+        <a href="service.html" class="nav-item">
+            <img src="images/service-icon.png" alt="服务" class="nav-icon" width="24" height="24">
+            服务
+        </a>
+        <a href="#" class="nav-item">
+            <img src="images/my-icon.png" alt="我的" class="nav-icon" width="24" height="24">
+            我的
+        </a>
+    </div>
+
+    <script src="emergency.js"></script>
+</body>
+</html>

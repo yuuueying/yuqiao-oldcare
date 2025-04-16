@@ -1,0 +1,457 @@
+/* 时间银行页面专用样式 */
+
+/* 顶部导航 */
+.timebank-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.back-button {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.page-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+/* 时间余额卡片 */
+.time-balance-container {
+    padding: 15px;
+}
+
+.time-balance-card {
+    background: linear-gradient(135deg, #ffc107 0%, #ff7d1a 100%);
+    border-radius: 12px;
+    padding: 20px;
+    color: white;
+    box-shadow: 0 4px 15px rgba(255, 125, 26, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.time-balance-card::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 150px;
+    height: 150px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.time-balance-title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.gold-member-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 100px;
+    padding: 5px 12px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.time-balance-amount {
+    margin: 20px 0;
+}
+
+.time-amount {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.time-unit {
+    font-size: 1.2rem;
+    margin-left: 5px;
+}
+
+.time-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.time-stat-item {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.stat-value {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.stat-value.positive {
+    color: #c3ffdb;
+}
+
+.stat-value.negative {
+    color: #ffe4c3;
+}
+
+.stat-value.total {
+    color: white;
+}
+
+/* 功能按钮 */
+.function-buttons {
+    display: flex;
+    margin: 0 15px 15px;
+    gap: 15px;
+}
+
+.function-button {
+    flex: 1;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.function-button img {
+    margin-right: 8px;
+}
+
+.function-button:active {
+    transform: scale(0.98);
+}
+
+/* 搜索框 */
+.search-container {
+    padding: 0 15px 15px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5;
+    border-radius: 100px;
+    padding: 10px 15px;
+}
+
+.search-box img {
+    margin-right: 10px;
+    opacity: 0.5;
+}
+
+.search-box input {
+    flex: 1;
+    border: none;
+    background: transparent;
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+.search-box input:focus {
+    outline: none;
+}
+
+/* 服务分类 */
+.service-categories {
+    padding: 0 15px 15px;
+}
+
+.section-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: var(--text-color);
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.category-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.category-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.life-icon {
+    background-color: #e6f2ff;
+}
+
+.health-icon {
+    background-color: #e8f8ef;
+}
+
+.culture-icon {
+    background-color: #f7ebff;
+}
+
+.skill-icon {
+    background-color: #fff8e0;
+}
+
+.category-name {
+    font-size: 0.9rem;
+    color: var(--text-color);
+    text-align: center;
+}
+
+/* 附近服务需求 */
+.nearby-requests {
+    padding: 0 15px 15px;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.view-all, .view-more {
+    font-size: 0.9rem;
+    color: var(--light-text);
+    cursor: pointer;
+}
+
+.request-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.request-item {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    display: flex;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.request-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+}
+
+.life-service {
+    background-color: #e6f2ff;
+}
+
+.skill-service {
+    background-color: #fff8e0;
+}
+
+.request-content {
+    flex: 1;
+}
+
+.request-title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: var(--text-color);
+}
+
+.request-person {
+    font-size: 0.9rem;
+    color: var(--light-text);
+    margin-bottom: 8px;
+}
+
+.distance {
+    color: #999;
+    margin-left: 8px;
+    font-size: 0.8rem;
+}
+
+.request-description {
+    font-size: 0.9rem;
+    color: var(--text-color);
+    line-height: 1.4;
+}
+
+.request-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    min-width: 80px;
+}
+
+.request-time {
+    display: flex;
+    align-items: center;
+    color: #ff9d4d;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.request-time img {
+    margin-right: 5px;
+}
+
+.accept-btn {
+    background-color: #ff7d1a;
+    color: white;
+    border: none;
+    border-radius: 100px;
+    padding: 8px 15px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.accept-btn:hover {
+    background-color: #f07016;
+}
+
+/* 我的服务记录 */
+.my-service-records {
+    padding: 0 15px 80px; /* 底部留出空间给导航栏 */
+}
+
+.record-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.record-item {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.record-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.cleaning-service {
+    background-color: #e6f2ff;
+}
+
+.shopping-service {
+    background-color: #e8f8ef;
+}
+
+.record-content {
+    flex: 1;
+}
+
+.record-title {
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+.record-time {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ff9d4d;
+}
+
+/* 动画效果 */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.time-balance-card,
+.function-buttons,
+.service-categories,
+.request-item,
+.record-item {
+    animation: fadeIn 0.5s ease;
+}
+
+/* 响应式调整 */
+@media (max-width: 375px) {
+    .time-amount {
+        font-size: 3rem;
+    }
+    
+    .category-grid {
+        gap: 10px;
+    }
+    
+    .category-icon {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 320px) {
+    .time-amount {
+        font-size: 2.5rem;
+    }
+    
+    .stat-label {
+        font-size: 0.8rem;
+    }
+    
+    .stat-value {
+        font-size: 1rem;
+    }
+    
+    .category-name {
+        font-size: 0.8rem;
+    }
+}

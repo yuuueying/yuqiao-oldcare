@@ -1,0 +1,379 @@
+/* 紧急救援页面专用样式 */
+
+/* 顶部导航 */
+.emergency-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.back-button {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.page-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.header-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.header-icon {
+    cursor: pointer;
+}
+
+/* 一键紧急求助 */
+.emergency-section {
+    padding: 20px 15px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--text-color);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.instruction-text {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.sos-button-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.sos-button {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-color: #f43f3f;
+    border: 8px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    box-shadow: 0 4px 20px rgba(244, 63, 63, 0.4);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.sos-button::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    right: -8px;
+    bottom: -8px;
+    border: 2px solid white;
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.95);
+        opacity: 0.7;
+    }
+    50% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0.95);
+        opacity: 0.7;
+    }
+}
+
+.sos-button:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 10px rgba(244, 63, 63, 0.3);
+}
+
+.phone-icon {
+    margin-bottom: 10px;
+}
+
+.sos-text {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* 紧急联系人 */
+.contacts-section {
+    padding: 20px 15px;
+    background-color: white;
+}
+
+.contact-list {
+    margin-top: 15px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.contact-avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.medical {
+    background-color: #e6f0ff;
+}
+
+.nurse {
+    background-color: #e8f8ef;
+}
+
+.family {
+    background-color: #fff8e0;
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.contact-name {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--text-color);
+    margin-bottom: 5px;
+}
+
+.contact-role {
+    font-size: 0.9rem;
+    color: var(--light-text);
+}
+
+.call-button {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #e6f0ff;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.call-button:active {
+    background-color: #d6e5ff;
+}
+
+.manage-contacts-button {
+    background-color: #f5f5f5;
+    color: #666;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.manage-contacts-button:active {
+    background-color: #eee;
+}
+
+/* 紧急救援服务 */
+.services-section {
+    padding: 20px 15px 80px; /* 底部留出空间给导航栏 */
+    background-color: #f9f9f9;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.service-item {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+}
+
+.service-item:active {
+    background-color: #f9f9f9;
+}
+
+.service-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.ambulance .service-icon {
+    background-color: #ffefef;
+}
+
+.police .service-icon {
+    background-color: #e6f0ff;
+}
+
+.fire .service-icon {
+    background-color: #fff5e6;
+}
+
+.elderly .service-icon {
+    background-color: #e8f8ef;
+}
+
+.service-info {
+    flex: 1;
+}
+
+.service-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--text-color);
+    margin-bottom: 5px;
+}
+
+.service-desc {
+    font-size: 0.9rem;
+    color: var(--light-text);
+}
+
+/* 底部导航 */
+.bottom-nav {
+    justify-content: space-between;
+}
+
+.bottom-nav .nav-item {
+    flex: 1;
+}
+
+/* 动画效果 */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.emergency-section,
+.contacts-section,
+.services-section {
+    animation: fadeIn 0.5s ease;
+}
+
+.sos-button.pressed {
+    animation: none;
+    background-color: #c52e2e;
+    transform: scale(0.9);
+}
+
+.sos-button.pressed::before {
+    animation: none;
+    opacity: 0;
+}
+
+.countdown-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    color: white;
+}
+
+.countdown-number {
+    font-size: 5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.countdown-text {
+    font-size: 1.2rem;
+}
+
+.cancel-button {
+    background-color: white;
+    color: #f43f3f;
+    border: none;
+    border-radius: 100px;
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+/* 响应式调整 */
+@media (max-width: 375px) {
+    .sos-button {
+        width: 160px;
+        height: 160px;
+    }
+    
+    .sos-text {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .sos-button {
+        width: 140px;
+        height: 140px;
+    }
+    
+    .service-name {
+        font-size: 1.1rem;
+    }
+}

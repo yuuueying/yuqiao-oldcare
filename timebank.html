@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>时间银行</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="timebank.css">
+</head>
+<body>
+    <!-- 顶部导航 -->
+    <div class="header timebank-header">
+        <div class="back-button">
+            <a href="index.html">
+                <img src="images/back-icon.png" alt="返回" width="24" height="24">
+            </a>
+        </div>
+        <div class="page-title">时间银行</div>
+        <div class="header-icons">
+            <img src="images/history-icon.png" alt="历史" class="header-icon" width="24" height="24">
+            <img src="images/bookmark-icon.png" alt="收藏" class="header-icon" width="24" height="24">
+        </div>
+    </div>
+    
+    <!-- 时间余额卡片 -->
+    <div class="time-balance-container">
+        <div class="time-balance-card">
+            <div class="time-balance-title">我的时间余额</div>
+            <div class="gold-member-badge">金卡会员</div>
+            <div class="time-balance-amount">
+                <span class="time-amount">53</span>
+                <span class="time-unit">小时</span>
+            </div>
+            <div class="time-stats-grid">
+                <div class="time-stat-item">
+                    <div class="stat-label">本月获得</div>
+                    <div class="stat-value positive">+12</div>
+                </div>
+                <div class="time-stat-item">
+                    <div class="stat-label">本月使用</div>
+                    <div class="stat-value negative">-5</div>
+                </div>
+                <div class="time-stat-item">
+                    <div class="stat-label">累计服务</div>
+                    <div class="stat-value total">128</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 功能按钮 -->
+    <div class="function-buttons">
+        <div class="function-button">
+            <img src="images/request-icon.png" alt="需求" width="24" height="24">
+            <span>发布需求</span>
+        </div>
+        <div class="function-button">
+            <img src="images/service-icon.png" alt="服务" width="24" height="24">
+            <span>提供服务</span>
+        </div>
+    </div>
+    
+    <!-- 搜索框 -->
+    <div class="search-container">
+        <div class="search-box">
+            <img src="images/search-icon.png" alt="搜索" width="20" height="20">
+            <input type="text" placeholder="搜索服务或技能">
+        </div>
+    </div>
+    
+    <!-- 服务分类 -->
+    <div class="service-categories">
+        <div class="section-title">服务分类</div>
+        <div class="category-grid">
+            <div class="category-item">
+                <div class="category-icon life-icon">
+                    <img src="images/life-icon.png" alt="生活照料" width="28" height="28">
+                </div>
+                <div class="category-name">生活照料</div>
+            </div>
+            <div class="category-item">
+                <div class="category-icon health-icon">
+                    <img src="images/health-care-icon.png" alt="健康关爱" width="28" height="28">
+                </div>
+                <div class="category-name">健康关爱</div>
+            </div>
+            <div class="category-item">
+                <div class="category-icon culture-icon">
+                    <img src="images/culture-icon.png" alt="文化娱乐" width="28" height="28">
+                </div>
+                <div class="category-name">文化娱乐</div>
+            </div>
+            <div class="category-item">
+                <div class="category-icon skill-icon">
+                    <img src="images/skill-icon.png" alt="技能分享" width="28" height="28">
+                </div>
+                <div class="category-name">技能分享</div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 附近服务需求 -->
+    <div class="nearby-requests">
+        <div class="section-header">
+            <div class="section-title">附近服务需求</div>
+            <div class="view-all">查看全部</div>
+        </div>
+        
+        <div class="request-list">
+            <!-- 陪同看病服务需求 -->
+            <div class="request-item">
+                <div class="request-icon life-service">
+                    <img src="images/life-icon.png" alt="生活照料" width="24" height="24">
+                </div>
+                <div class="request-content">
+                    <div class="request-title">陪同看病</div>
+                    <div class="request-person">李爷爷 <span class="distance">300米</span></div>
+                    <div class="request-description">周五上午10点，需要有人陪同去社区医院做例行检查，希望有经验的志愿者帮忙。</div>
+                </div>
+                <div class="request-info">
+                    <div class="request-time">
+                        <img src="images/clock-icon.png" alt="时间" width="16" height="16">
+                        <span>2小时</span>
+                    </div>
+                    <button class="accept-btn">接单</button>
+                </div>
+            </div>
+            
+            <!-- 教学智能手机使用服务需求 -->
+            <div class="request-item">
+                <div class="request-icon skill-service">
+                    <img src="images/skill-icon.png" alt="技能分享" width="24" height="24">
+                </div>
+                <div class="request-content">
+                    <div class="request-title">教学智能手机使用</div>
+                    <div class="request-person">张阿姨 <span class="distance">500米</span></div>
+                    <div class="request-description">刚买了新手机，需要有人教我如何使用微信和玉见APP，希望有耐心的年轻人来教我。</div>
+                </div>
+                <div class="request-info">
+                    <div class="request-time">
+                        <img src="images/clock-icon.png" alt="时间" width="16" height="16">
+                        <span>1小时</span>
+                    </div>
+                    <button class="accept-btn">接单</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 我的服务记录 -->
+    <div class="my-service-records">
+        <div class="section-header">
+            <div class="section-title">我的服务记录</div>
+            <div class="view-more">更多</div>
+        </div>
+        
+        <div class="record-list">
+            <!-- 为王大爷做家务清洁服务记录 -->
+            <div class="record-item">
+                <div class="record-icon cleaning-service">
+                    <img src="images/cleaning-icon.png" alt="清洁" width="24" height="24">
+                </div>
+                <div class="record-content">
+                    <div class="record-title">为王大爷做家务清洁</div>
+                </div>
+                <div class="record-time">+3小时</div>
+            </div>
+            
+            <!-- 陪赵奶奶买菜服务记录 -->
+            <div class="record-item">
+                <div class="record-icon shopping-service">
+                    <img src="images/shopping-icon.png" alt="购物" width="24" height="24">
+                </div>
+                <div class="record-content">
+                    <div class="record-title">陪赵奶奶买菜</div>
+                </div>
+                <div class="record-time">+2小时</div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 底部导航 -->
+    <div class="bottom-nav">
+        <a href="index.html" class="nav-item">
+            <img src="images/home-icon.png" alt="首页" class="nav-icon" width="24" height="24">
+            首页
+        </a>
+        <a href="#" class="nav-item">
+            <div class="emergency-btn">
+                <img src="images/emergency-icon.png" alt="紧急呼叫" class="emergency-nav-icon" width="28" height="28">
+            </div>
+            紧急呼叫
+        </a>
+        <a href="my.html" class="nav-item">
+            <img src="images/my-icon.png" alt="我的" class="nav-icon" width="24" height="24">
+            我的
+        </a>
+    </div>
+
+    <script src="timebank.js"></script>
+</body>
+</html>
