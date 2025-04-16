@@ -8,6 +8,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // 初始化紧急服务点击
     initEmergencyServices();
     
+    // 初始化底部导航"我的"按钮跳转
+    initMyButtonNavigation();
+    
     // 页面加载动画
     animatePageLoad();
     
@@ -20,6 +23,19 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 1000);
     }
 });
+
+// 初始化底部导航"我的"按钮跳转
+function initMyButtonNavigation() {
+    const myButton = document.querySelector('.bottom-nav .nav-item:last-child');
+    if (myButton) {
+        myButton.addEventListener('click', function(e) {
+            if (!this.classList.contains('active')) {
+                e.preventDefault();
+                window.location.href = 'my.html?from=emergency';
+            }
+        });
+    }
+}
 
 // 初始化紧急按钮
 function initEmergencyButton() {
